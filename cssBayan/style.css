@@ -1,6 +1,5 @@
 html, body{
     font-family: 'Montserrat', sans-serif;
-
 }
 
 * {
@@ -9,12 +8,53 @@ html, body{
     box-sizing: border-box;
 }
 
-/* Change width images */
-img {
-    max-width: 320px;
+body{
+    background-color: #8e8aff;
+    color: rgb(4, 13, 69);
 }
 
-/*  */
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.meme__title{
+    padding-bottom: .6rem;
+    border-bottom: .15rem solid #6d69e8;
+    margin-bottom: 1rem;
+}
+
+
+
+.list__holder .item__holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.list__holder .item__holder .title__item{
+    align-self: flex-start;
+}
+
+.meme__list .item__holder{
+    padding: .8rem 0 .8rem 0;
+    border-bottom: .15rem solid #6d69e8;
+}
+
+.meme__list .meme__holder{
+    margin-top: .6rem;
+}
+
+.meme__list .meme__holder img{
+    width: 24rem;
+    border-radius: .6rem;
+}
+
+
+/* Delete radio elements from page  */
 input[type="radio"]{
     display: none;
 }
