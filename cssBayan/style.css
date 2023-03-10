@@ -8,3 +8,58 @@ html, body{
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Change width images */
+img {
+    max-width: 320px;
+}
+
+/*  */
+input[type="radio"]{
+    display: none;
+}
+
+/* 1 item list */
+#item-1 ~ .list__holder .list__item-1 .meme__holder{
+    display: none;
+}
+
+#item-1:checked ~ .list__holder .list__item-1 .meme__holder{
+    display: block;
+}
+
+/* 2 item list */
+#item-2 ~ .list__holder .list__item-2 .meme__holder{
+    display: none;
+}
+
+#item-2:checked ~ .list__holder .list__item-2 .meme__holder{
+    display: block;
+}
+
+/* 3 item list */
+#item-3 ~ .list__holder .list__item-3 .meme__holder{
+    display: none;
+}
+
+#item-3:checked ~ .list__holder .list__item-3 .meme__holder{
+    display: block;
+}
+
+/* 4 item list */
+#item-4 ~ .list__holder .list__item-4 .meme__holder{
+    display: none;
+}
+
+#item-4:checked ~ .list__holder .list__item-4 .meme__holder{
+    display: block;
+}
+
+/* 5 item list */
+#item-5 ~ .list__holder .list__item-5 .meme__holder{
+    display: none;
+}
+
+#item-5:checked ~ .list__holder .list__item-5 .meme__holder{
+    display: block;
+}
