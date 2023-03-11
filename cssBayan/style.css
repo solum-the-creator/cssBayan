@@ -47,6 +47,11 @@ main{
         color: rgb(4, 13, 69);
         transition: color 1s ease-out;
     }
+
+    .list__holder .list__item:hover .item__holder .meme__holder{
+        max-height: var(--max-height-meme);
+        opacity: 1;
+    }
 }
 
 
@@ -265,10 +270,7 @@ input[type="radio"]{
 }
 
 
-.list__holder .list__item:hover .item__holder .meme__holder{
-    max-height: var(--max-height-meme);
-    opacity: 1;
-}
+
 
 
 
