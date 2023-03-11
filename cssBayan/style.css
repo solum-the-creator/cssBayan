@@ -8,6 +8,10 @@ html, body{
     box-sizing: border-box;
 }
 
+:root{
+    --max-height-meme:40rem;
+}
+
 body{
     background-color: #8e8aff;
     color: rgb(4, 13, 69);
@@ -35,9 +39,6 @@ main{
     flex-direction: column;
 }
 
-.list__holder .item__holder .title__item{
-    align-self: flex-start;
-}
 
 .meme__list .item__holder{
     padding: .8rem 0 .8rem 0;
@@ -53,6 +54,30 @@ main{
     border-radius: .6rem;
 }
 
+.meme__list .item__holder .header__item{
+    align-self: stretch;
+}
+
+.meme__list .item__holder .header__item{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.meme__list .item__holder .header__item .icon__holder{
+    width: 1.2rem;
+    opacity: 0;
+    background: url(images/icons/plus-solid.svg) no-repeat;
+    transition: all .3s ease;
+}
+
+.list__holder:hover .item__holder .header__item .icon__holder{
+    opacity: 1;
+}
+
+.list__holder .list__item:hover .item__holder .header__item .icon__holder{
+    transform: rotate(45deg);
+}
 
 /* Delete radio elements from page  */
 input[type="radio"]{
@@ -60,46 +85,96 @@ input[type="radio"]{
 }
 
 /* 1 item list */
-#item-1 ~ .list__holder .list__item-1 .meme__holder{
+/* #item-1 ~ .list__holder .list__item-1 .meme__holder{
     display: none;
-}
+} */
 
 #item-1:checked ~ .list__holder .list__item-1 .meme__holder{
-    display: block;
+    max-height: var(--max-height-meme);
+    opacity: 1;
+}
+
+#item-1:checked ~ .list__holder .list__item-1 .header__item .icon__holder{
+    transform: rotate(45deg);
 }
 
 /* 2 item list */
-#item-2 ~ .list__holder .list__item-2 .meme__holder{
+/* #item-2 ~ .list__holder .list__item-2 .meme__holder{
     display: none;
-}
+} */
 
 #item-2:checked ~ .list__holder .list__item-2 .meme__holder{
-    display: block;
+    max-height: var(--max-height-meme);
+    opacity: 1;
+}
+
+#item-2:checked ~ .list__holder .list__item-2 .header__item .icon__holder{
+    transform: rotate(45deg);
 }
 
 /* 3 item list */
-#item-3 ~ .list__holder .list__item-3 .meme__holder{
+/* #item-3 ~ .list__holder .list__item-3 .meme__holder{
     display: none;
-}
+} */
 
 #item-3:checked ~ .list__holder .list__item-3 .meme__holder{
-    display: block;
+    max-height: var(--max-height-meme);
+    opacity: 1;
+}
+
+#item-3:checked ~ .list__holder .list__item-3 .header__item .icon__holder{
+    transform: rotate(45deg);
 }
 
 /* 4 item list */
-#item-4 ~ .list__holder .list__item-4 .meme__holder{
+/* #item-4 ~ .list__holder .list__item-4 .meme__holder{
     display: none;
-}
+} */
 
 #item-4:checked ~ .list__holder .list__item-4 .meme__holder{
-    display: block;
+    max-height: var(--max-height-meme);
+    opacity: 1;
+}
+
+#item-4:checked ~ .list__holder .list__item-4 .header__item .icon__holder{
+    transform: rotate(45deg);
 }
 
 /* 5 item list */
-#item-5 ~ .list__holder .list__item-5 .meme__holder{
+/* #item-5 ~ .list__holder .list__item-5 .meme__holder{
     display: none;
-}
+} */
 
 #item-5:checked ~ .list__holder .list__item-5 .meme__holder{
-    display: block;
+    max-height: var(--max-height-meme);
+    opacity: 1;
 }
+
+#item-5:checked ~ .list__holder .list__item-5 .header__item .icon__holder{
+    transform: rotate(45deg);
+}
+
+
+/* Hover effect */
+.list__holder .list__item:hover .item__holder{
+    cursor: pointer;
+}
+
+
+
+.list__holder .list__item .item__holder .meme__holder{
+    max-height: 0;
+    opacity: 0;
+    transition: all .5s ease-out;
+    overflow: hidden;
+
+}
+
+.list__holder .list__item:hover .item__holder .meme__holder{
+    max-height: var(--max-height-meme);
+    opacity: 1;
+}
+
+
+
+
