@@ -42,6 +42,12 @@ main{
     }
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .list__holder:hover .list__item{
+        color: rgb(4, 13, 69);
+        transition: color 1s ease-out;
+    }
+}
 
 
 .list__holder .item__holder {
@@ -102,10 +108,9 @@ input[type="radio"]{
     color: rgb(104, 3, 162);
 }
 
-.list__holder:hover .list__item{
-    color: rgb(4, 13, 69);
-    transition: color 1s ease-out;
-}
+
+
+
 
 /* 1 item list */
 /* #item-1 ~ .list__holder .list__item-1 .meme__holder{
