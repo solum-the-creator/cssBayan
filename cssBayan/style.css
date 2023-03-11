@@ -98,6 +98,15 @@ input[type="radio"]{
     transform: rotate(45deg);
 }
 
+#item-1:active ~ .list__holder .list__item-1{
+    color: rgb(104, 3, 162);
+}
+
+#item-1:active ~ .list__holder .list__item-1 .meme__holder {
+    filter: blur(.1rem);
+    scale: .95;
+}
+
 /* 2 item list */
 /* #item-2 ~ .list__holder .list__item-2 .meme__holder{
     display: none;
@@ -112,6 +121,14 @@ input[type="radio"]{
     transform: rotate(45deg);
 }
 
+#item-2:active ~ .list__holder .list__item-2{
+    color: rgb(104, 3, 162);
+}
+
+#item-2:active ~ .list__holder .list__item-2 .meme__holder {
+    filter: blur(.1rem);
+    scale: .95;
+}
 /* 3 item list */
 /* #item-3 ~ .list__holder .list__item-3 .meme__holder{
     display: none;
@@ -124,6 +141,15 @@ input[type="radio"]{
 
 #item-3:checked ~ .list__holder .list__item-3 .header__item .icon__holder{
     transform: rotate(45deg);
+}
+
+#item-3:active ~ .list__holder .list__item-3{
+    color: rgb(104, 3, 162);
+}
+
+#item-3:active ~ .list__holder .list__item-3 .meme__holder {
+    filter: blur(.1rem);
+    scale: .95;
 }
 
 /* 4 item list */
@@ -140,6 +166,15 @@ input[type="radio"]{
     transform: rotate(45deg);
 }
 
+#item-4:active ~ .list__holder .list__item-4{
+    color: rgb(104, 3, 162);
+}
+
+#item-4:active ~ .list__holder .list__item-4 .meme__holder {
+    filter: blur(.1rem);
+    scale: .95;
+}
+
 /* 5 item list */
 /* #item-5 ~ .list__holder .list__item-5 .meme__holder{
     display: none;
@@ -154,11 +189,21 @@ input[type="radio"]{
     transform: rotate(45deg);
 }
 
+#item-5:active ~ .list__holder .list__item-5{
+    color: rgb(104, 3, 162);
+}
+
+#item-5:active ~ .list__holder .list__item-5 .meme__holder {
+    filter: blur(.1rem);
+    scale: .95;
+}
+
 
 /* Hover effect */
 .list__holder .list__item:hover .item__holder{
     cursor: pointer;
 }
+
 
 
 
@@ -169,6 +214,7 @@ input[type="radio"]{
     overflow: hidden;
 
 }
+
 
 .list__holder .list__item:hover .item__holder .meme__holder{
     max-height: var(--max-height-meme);
