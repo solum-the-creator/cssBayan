@@ -30,6 +30,18 @@ main{
     margin-bottom: 1rem;
 }
 
+@media (min-width: 320px) and (max-width: 820px){
+    html{
+        font-size: .7rem;
+    }
+}
+
+@media (min-width: 1920px){
+    html{
+        font-size: 1.6rem;
+    }
+}
+
 
 
 .list__holder .item__holder {
