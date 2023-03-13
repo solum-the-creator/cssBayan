@@ -1,0 +1,283 @@
+html, body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --max-height-meme:40rem;
+}
+
+body{
+    background-color: #8e8aff;
+    color: rgb(4, 13, 69);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.meme__title{
+    padding-bottom: .6rem;
+    border-bottom: .15rem solid #6d69e8;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 320px){
+    html{
+        font-size: .5rem;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 820px){
+    html{
+        font-size: .7rem;
+    }
+}
+
+@media (min-width: 1920px){
+    html{
+        font-size: 1.6rem;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .list__holder:hover .list__item{
+        color: rgb(4, 13, 69);
+        transition: color 1s ease-out;
+    }
+
+    .list__holder .list__item:hover .item__holder .meme__holder{
+        max-height: var(--max-height-meme);
+        opacity: 1;
+    }
+}
+
+
+.list__holder .item__holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.meme__list .item__holder{
+    padding: .8rem 0 .8rem 0;
+    border-bottom: .15rem solid #6d69e8;
+}
+
+.meme__list .meme__holder{
+    margin-top: .6rem;
+}
+
+.meme__list .meme__holder img{
+    width: 24rem;
+    border-radius: .6rem;
+}
+
+.meme__list .item__holder .header__item{
+    align-self: stretch;
+}
+
+.meme__list .item__holder .header__item{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.meme__list .item__holder .header__item .icon__holder{
+    width: 1.2rem;
+    opacity: 0;
+    background: url(images/icons/plus-solid.svg) no-repeat;
+    transition: all .3s ease;
+}
+
+.list__holder:hover .item__holder .header__item .icon__holder{
+    opacity: 1;
+}
+
+.list__holder .list__item:hover .item__holder .header__item .icon__holder{
+    transform: rotate(45deg);
+}
+
+/* Delete radio elements from page  */
+input[type="radio"]{
+    display: none;
+}
+
+
+/* not checked elems */
+.list__holder .list__item{
+    color: rgb(104, 3, 162);
+}
+
+
+
+
+
+/* 1 item list */
+/* #item-1 ~ .list__holder .list__item-1 .meme__holder{
+    display: none;
+} */
+
+#item-1:checked ~ .list__holder .list__item-1 .meme__holder{
+    max-height: var(--max-height-meme);
+    opacity: 1;
+}
+
+#item-1:checked ~ .list__holder .list__item-1 .header__item .icon__holder{
+    transform: rotate(45deg);
+}
+
+#item-1:checked ~ .list__holder .list__item-1{
+    color: rgb(4, 13, 69);
+}
+
+#item-1:active ~ .list__holder .list__item-1{
+    color: rgb(104, 3, 162);
+}
+
+#item-1:active ~ .list__holder .list__item-1 .meme__holder {
+    filter: blur(.1rem);
+    scale: .95;
+}
+
+/* 2 item list */
+/* #item-2 ~ .list__holder .list__item-2 .meme__holder{
+    display: none;
+} */
+
+#item-2:checked ~ .list__holder .list__item-2 .meme__holder{
+    max-height: var(--max-height-meme);
+    opacity: 1;
+}
+
+#item-2:checked ~ .list__holder .list__item-2 .header__item .icon__holder{
+    transform: rotate(45deg);
+}
+
+#item-2:checked ~ .list__holder .list__item-2{
+    color: rgb(4, 13, 69);
+}
+
+#item-2:active ~ .list__holder .list__item-2{
+    color: rgb(104, 3, 162);
+}
+
+#item-2:active ~ .list__holder .list__item-2 .meme__holder {
+    filter: blur(.1rem);
+    scale: .95;
+}
+/* 3 item list */
+/* #item-3 ~ .list__holder .list__item-3 .meme__holder{
+    display: none;
+} */
+
+#item-3:checked ~ .list__holder .list__item-3 .meme__holder{
+    max-height: var(--max-height-meme);
+    opacity: 1;
+}
+
+#item-3:checked ~ .list__holder .list__item-3 .header__item .icon__holder{
+    transform: rotate(45deg);
+}
+
+#item-3:checked ~ .list__holder .list__item-3{
+    color: rgb(4, 13, 69);
+}
+
+#item-3:active ~ .list__holder .list__item-3{
+    color: rgb(104, 3, 162);
+}
+
+#item-3:active ~ .list__holder .list__item-3 .meme__holder {
+    filter: blur(.1rem);
+    scale: .95;
+}
+
+/* 4 item list */
+/* #item-4 ~ .list__holder .list__item-4 .meme__holder{
+    display: none;
+} */
+
+#item-4:checked ~ .list__holder .list__item-4 .meme__holder{
+    max-height: var(--max-height-meme);
+    opacity: 1;
+}
+
+#item-4:checked ~ .list__holder .list__item-4 .header__item .icon__holder{
+    transform: rotate(45deg);
+}
+
+#item-4:checked ~ .list__holder .list__item-4{
+    color: rgb(4, 13, 69);
+}
+
+#item-4:active ~ .list__holder .list__item-4{
+    color: rgb(104, 3, 162);
+}
+
+#item-4:active ~ .list__holder .list__item-4 .meme__holder {
+    filter: blur(.1rem);
+    scale: .95;
+}
+
+/* 5 item list */
+/* #item-5 ~ .list__holder .list__item-5 .meme__holder{
+    display: none;
+} */
+
+#item-5:checked ~ .list__holder .list__item-5 .meme__holder{
+    max-height: var(--max-height-meme);
+    opacity: 1;
+}
+
+#item-5:checked ~ .list__holder .list__item-5 .header__item .icon__holder{
+    transform: rotate(45deg);
+}
+
+#item-5:checked ~ .list__holder .list__item-5{
+    color: rgb(4, 13, 69);
+}
+
+#item-5:active ~ .list__holder .list__item-5{
+    color: rgb(104, 3, 162);
+}
+
+#item-5:active ~ .list__holder .list__item-5 .meme__holder {
+    filter: blur(.1rem);
+    scale: .95;
+}
+
+
+
+/* Hover effect */
+.list__holder .list__item:hover .item__holder{
+    cursor: pointer;
+}
+
+
+
+
+.list__holder .list__item .item__holder .meme__holder{
+    max-height: 0;
+    opacity: 0;
+    transition: all .5s ease-out;
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+
